@@ -157,17 +157,21 @@
             // 
             // UndoToolStripMenuItem
             // 
+            this.UndoToolStripMenuItem.Enabled = false;
             this.UndoToolStripMenuItem.Name = "UndoToolStripMenuItem";
             this.UndoToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Z)));
             this.UndoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.UndoToolStripMenuItem.Text = "元に戻す(&U)";
+            this.UndoToolStripMenuItem.Click += new System.EventHandler(this.UndoToolStripMenuItem_Click);
             // 
             // RedoToolStripMenuItem
             // 
+            this.RedoToolStripMenuItem.Enabled = false;
             this.RedoToolStripMenuItem.Name = "RedoToolStripMenuItem";
             this.RedoToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Y)));
             this.RedoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.RedoToolStripMenuItem.Text = "やり直し(&R)";
+            this.RedoToolStripMenuItem.Click += new System.EventHandler(this.RedoToolStripMenuItem_Click);
             // 
             // toolStripMenuItem2
             // 
@@ -180,6 +184,7 @@
             this.CutToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.X)));
             this.CutToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.CutToolStripMenuItem.Text = "切り取り(&T)";
+            this.CutToolStripMenuItem.Click += new System.EventHandler(this.CutToolStripMenuItem_Click);
             // 
             // CopeToolStripMenuItem
             // 
@@ -187,13 +192,16 @@
             this.CopeToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.C)));
             this.CopeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.CopeToolStripMenuItem.Text = "コピー(&C)";
+            this.CopeToolStripMenuItem.Click += new System.EventHandler(this.CopeToolStripMenuItem_Click);
             // 
             // PastToolStripMenuItem
             // 
+            this.PastToolStripMenuItem.Enabled = false;
             this.PastToolStripMenuItem.Name = "PastToolStripMenuItem";
             this.PastToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.V)));
             this.PastToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.PastToolStripMenuItem.Text = "貼り付け(&P)";
+            this.PastToolStripMenuItem.Click += new System.EventHandler(this.PastToolStripMenuItem_Click);
             // 
             // DeleteToolStripMenuItem
             // 
@@ -201,6 +209,7 @@
             this.DeleteToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.Delete;
             this.DeleteToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.DeleteToolStripMenuItem.Text = "削除(&L)";
+            this.DeleteToolStripMenuItem.Click += new System.EventHandler(this.DeleteToolStripMenuItem_Click);
             // 
             // toolStripMenuItem3
             // 
@@ -212,6 +221,7 @@
             this.ColorToolStripMenuItem.Name = "ColorToolStripMenuItem";
             this.ColorToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.ColorToolStripMenuItem.Text = "色...";
+            this.ColorToolStripMenuItem.Click += new System.EventHandler(this.ColorToolStripMenuItem_Click);
             // 
             // FontToolStripMenuItem
             // 
